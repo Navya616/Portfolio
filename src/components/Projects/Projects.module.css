@@ -1,0 +1,303 @@
+@import "../../vars.css";
+
+/* Projects.module.css */
+.container {
+  position: relative;
+  padding: 6rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.title {
+  color: var(--color-text);
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  bottom: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: var(--color-accent);
+  border-radius: 2px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: var(--color-text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.filterContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.filterButton {
+  padding: 0.6rem 1.5rem;
+  background: transparent;
+  border: 2px solid var(--color-border);
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-text);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filterButton:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.filterButton.active {
+  background: var(--color-accent);
+  color: white;
+  border-color: var(--color-accent);
+}
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.loadMoreButton {
+  display: block;
+  margin: 0 auto;
+  padding: 0.8rem 2rem;
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.loadMoreButton:hover {
+  background: var(--color-primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.scrollButton {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.scrollButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.arrowUp {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-135deg);
+  margin-top: 4px;
+}
+
+/* ProjectCard styles */
+.card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--color-card-bg, #ffffff);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.4s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.featured {
+  border: 2px solid var(--color-accent, #ffbb00);
+  box-shadow: 0 10px 25px rgba(var(--color-accent-rgb, 255, 187, 0), 0.2);
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card:hover .image {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.overlay.visible {
+  opacity: 1;
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+}
+
+.link {
+  padding: 0.6rem 1.2rem;
+  background: var(--color-accent, #ffbb00);
+  color: #000;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.link:hover {
+  background: var(--color-accent-light, #ffd866);
+  transform: translateY(-2px);
+}
+
+.linkIcon {
+  font-size: 1.1rem;
+}
+
+.featuredBadge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: var(--color-accent, #ffbb00);
+  color: #000;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  z-index: 1;
+}
+
+.content {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.projectTitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  color: var(--color-text-primary);
+}
+
+.description {
+  color: var(--color-text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 1.2rem;
+  flex-grow: 1;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+.skill {
+  padding: 0.3rem 0.8rem;
+  background: var(--color-bg-light, #f5f5f5);
+  border-radius: 20px;
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .projectsGrid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 4rem 1rem;
+  }
+  
+  .projectsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .filterContainer {
+    gap: 0.5rem;
+  }
+  
+  .filterButton {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+}

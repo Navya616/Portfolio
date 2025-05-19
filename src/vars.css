@@ -1,0 +1,12 @@
+:root {
+  /* Colours */
+  --color-text: #2c3a2b;       /* Dark sage for text on light backgrounds */
+  --color-primary: #8ba989;    /* Medium sage for primary elements */
+  --color-secondary: #6a8266;  /* Slightly darker sage for secondary elements */
+  --color-dark: #4b5d47;       /* Deep sage for dark elements */
+  --color-bg: #e8f0e3;         /* Light sage for background */
+
+  /* Fonts */
+  --font-roboto: "Roboto";
+}
+

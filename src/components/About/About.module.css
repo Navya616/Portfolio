@@ -1,0 +1,161 @@
+@import "../../vars.css";
+
+/* Experience.module.css */
+
+.container {
+  max-width: 1200px;
+  margin: 100px auto 0; /* Added top margin to create space between sections */
+  padding: 80px 20px;
+  background-color: var(--background-color, #82a37f);
+  box-shadow: 0 8px 30px rgba(0, 121, 107, 0.1);;
+}
+
+.headerContainer {
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+  
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 16px;
+  letter-spacing: 1px;
+}
+
+.titleUnderline {
+  height: 4px;
+  width: 80px;
+  background: linear-gradient(90deg, #3a7bd5, #00d2ff);
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+.contentWrapper {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.imageContainer {
+  flex: 0 0 300px;
+  position: relative;
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+}
+
+.profileImage {
+  width: 100%;
+  max-width: 300px; /* Limit maximum width */
+  height: 350px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  position: relative;
+  margin-left: 15px;
+}
+
+
+
+.experienceContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.experienceCard {
+  background-color: #dcf3db;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experienceCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.roleTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--dark-text, #1a202c);
+  margin: 0;
+}
+
+.roleIndicator {
+  width: 40px;
+  height: 4px;
+  background: linear-gradient(90deg, #3a7bd5, #00d2ff);
+  margin-left: 15px;
+  border-radius: 2px;
+}
+
+.experienceContent {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.pointContainer {
+  display: flex;
+  gap: 15px;
+}
+
+.pointBullet {
+  flex-shrink: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--accent-color, #3a7bd5);
+  margin-top: 8px;
+}
+
+.pointText {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-secondary, #4a5568);
+  margin: 0;
+}
+
+/* Responsive design */
+@media (max-width: 900px) {
+  .contentWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .imageContainer {
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 60px 16px;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  .experienceCard {
+    padding: 20px;
+  }
+  
+  .roleTitle {
+    font-size: 1.3rem;
+  }
+}

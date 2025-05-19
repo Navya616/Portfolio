@@ -1,0 +1,34 @@
+[
+  {
+    "role": "Full Stack Software Engineer Intern",
+    "organisation": "LendingClub",
+    "startDate": "June, 2024",
+    "endDate": "August, 2024",
+    "experiences": [
+      "Improved customer satisfaction and reduced TAT by 2 days by designing Figma prototypes and developing a UI dashboard for deposit application lifecycle.",
+      "Developed API endpoints and integrated Okta for role-based access control.",
+      "Created layouts for viewing request-response payloads, cutting error resolution time by 20%.",
+      "Automated deployment with CI/CD pipelines using Jenkins and MacGyver, reducing deployment time."
+    ],
+    "imageSrc": "history/lendingClub.png"
+  },
+  {
+    "role": "UI Designer",
+    "organisation": "Mirosoft",
+    "startDate": "Aug, 2021",
+    "endDate": "Aug, 2022",
+    "experiences": ["Worked on Windows 11", "Designed the control panel"],
+    "imageSrc": "history/microsoft.png"
+  },
+  {
+    "role": "SWE Intern",
+    "organisation": "Netflix",
+    "startDate": "Apr, 2020",
+    "endDate": "Jun, 2020",
+    "experiences": [
+      "Worked on component library",
+      "Helped create UI components"
+    ],
+    "imageSrc": "history/netflix.png"
+  }
+]
