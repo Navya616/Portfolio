@@ -10,9 +10,7 @@
       "HuggingFace",
       "ChromaDB",
       "NLP"
-    ],
-    "demo": "https://ydx-dev.youdescribe.org/home",
-    "source": "https://github.com/youdescribe-sfsu/YouDescribeX-app"
+    ]
   },
   {
     "title": "Blood Donation Management",
@@ -26,32 +24,26 @@
       "Javascript",
       "RESTful API Integration"
 
-    ],
-    "demo": "https://www.figma.com/proto/Xme6qsYAs4Db9xThflGr5G/Picture-Perfect-app?content-scaling=fixed&kind=proto&node-id=223-34&page-id=0%3A1&scaling=scale-down&starting-point-node-id=223%3A174",
-    "source": "https://github.com/Alekhya1311/PicturePerfect/tree/master"
+    ]
   },
   {
     "title": "Online Banking System",
     "imageSrc": "projects/banking.jpg",
     "description": "This application is designed to streamline online banking operations, providing a platform for users to securely manage transactions, payments, and account details, while enabling admins to oversee customer activities and services.",
-    "skills": ["React", "Javascript", "PHP", "MySQL", "HTML/CSS"],
-    "demo": "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExejlwMTE2cWt4aTVwYTJhbjdydjZtYnlnbHd0djV2eTE4dzlzdTloNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ayxNxlSeXoYlfUs6aG/giphy.gif",
-    "source": "https://github.com/Alekhya1311/hotel_Management/tree/main"
+    "skills": ["React", "Javascript", "PHP", "MySQL", "HTML/CSS"]
   },
   {
     "title": "Spotting Forge News Using ML Techniques",
     "imageSrc": "projects/MLProject.jpeg",
     "description": "Developed and evaluated multiple machine learning classifiers for text classification, implementing advanced preprocessing, feature extraction, and model tuning. Achieved 97.2% accuracy using Decision Tree, outperforming other models through effective pipeline optimization and cross-validation.",
-    "skills": ["Naïve Bayes", "Logistic Regression", "Decision Tree", "Random Forest", "Support Vector Machine (SVM)"],
-    "demo": "https://assets.ccbp.in/frontend/content/react-js/nxt-trendz-products-filter-group-output.gif",
-    "source": "https://github.com/Alekhya1311/website-with-prime-filters"
+    "skills": ["Naïve Bayes", "Logistic Regression", "Decision Tree", "Random Forest", "Support Vector Machine (SVM)"]
+    
   },
   {
     "title": "Airline Reservation System",
     "imageSrc": "projects/airline.png",
     "description": "Designed a responsive airline reservation website using HTML, CSS, and JavaScript, featuring interactive pages for flight details, booking, payments, and user authentication. Implemented structured navigation across multiple components including reservation forms and company information. Focused on enhancing user experience through clean UI design and intuitive layout.",
-    "skills": ["HTML","CSS","Javascript","DOM Manipulation","Form Handling"],
-    "demo": "https://alekhya1311.github.io/projectRebound/",
-    "source": "https://github.com/Alekhya1311/projectRebound/tree/main"
+    "skills": ["HTML","CSS","Javascript","DOM Manipulation","Form Handling"]
+    
   }
 ]

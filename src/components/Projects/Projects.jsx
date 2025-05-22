@@ -68,8 +68,8 @@ const ProjectCard = ({ project }) => {
     imageSrc, 
     description, 
     skills, 
-    demo, 
-    source, 
+    //demo, 
+    //source, 
     featured = false 
   } = project;
   
@@ -87,6 +87,7 @@ const ProjectCard = ({ project }) => {
           alt={`Preview of ${title}`}
           className={styles.image}
         />
+        {/*
         <div className={`${styles.overlay} ${isHovered ? styles.visible : ""}`}>
           <div className={styles.links}>
             {demo && (
@@ -103,6 +104,7 @@ const ProjectCard = ({ project }) => {
             )}
           </div>
         </div>
+        */}
         {featured && <div className={styles.featuredBadge}>Featured</div>}
       </div>
       
