@@ -119,7 +119,7 @@
   .heroImg {
     width: 100%;
     max-width: 90vw;
-    height: 500px; /* <-- reduced from auto to a fixed smaller height */
+    height: auto; /* <-- reduced from auto to a fixed smaller height */
     object-fit: cover; /* Keeps proportions, crops smartly */
     margin-bottom: 25px; /* <-- space between image and text */
   }
