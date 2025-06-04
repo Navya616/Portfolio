@@ -1,5 +1,6 @@
 @import "../../vars.css";
 
+/* Desktop defaults */
 .container {
   color: var(--color-text);
   margin-top: 120px;
@@ -7,21 +8,25 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 100vw;
-  padding: 10px 0%;
+  width: 100%;
+  padding: 40px 5%;
   gap: 10px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
 }
 
 .text h2 {
   font-size: 80px;
   font-weight: 700;
   letter-spacing: 4px;
+  margin: 0;
 }
 
 .text p {
   font-size: 40px;
   font-weight: 400;
   letter-spacing: 2px;
+  margin: 10px 0 0;
 }
 
 .links {
@@ -30,6 +35,8 @@
   align-items: flex-start;
   list-style: none;
   gap: 26px;
+  padding: 0;
+  margin: 0;
 }
 
 .link {
@@ -38,27 +45,61 @@
   gap: 25px;
 }
 
+.link img {
+  width: 28px;
+  height: 28px;
+}
+
 .link a {
   color: var(--color-text);
   text-decoration: none;
   font-size: 30px;
   font-weight: 400;
   letter-spacing: 1.5px;
+  word-break: break-word;
 }
 
+
+/* Mobile responsiveness */
 @media screen and (max-width: 830px) {
   .container {
     flex-direction: column;
-    gap: 23px;
+    align-items: center;
+    gap: 30px;
+    padding: 30px 5%;
   }
 
   .text {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+  }
+
+  .text h2 {
+    font-size: 36px;
+  }
+
+  .text p {
+    font-size: 20px;
   }
 
   .links {
     align-items: center;
+    gap: 20px;
+  }
+
+  .link {
+    gap: 15px;
+  }
+
+  .link img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .link a {
+    font-size: 18px;
+    text-align: center;
   }
 }

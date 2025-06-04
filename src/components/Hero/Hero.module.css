@@ -103,11 +103,45 @@
 }
 
 @media screen and (max-width: 830px) {
-  .container {
-    flex-direction: column-reverse;
-  }
+  .heroImg {
+  width: 900px;
+  height: 400px;
+  z-index: 1;
 
-  .content {
-    align-items: center;
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+/* Add this only for smaller screens */
+@media screen and (max-width: 830px) {
+  .heroImg {
+    width: 100%;
+    max-width: 90vw;
+    height: auto;
   }
 }
+
+
+  .title {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .description {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .contactBtn {
+    font-size: 20px;
+    padding: 12px 20px;
+  }
+
+  .container {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
