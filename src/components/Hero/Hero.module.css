@@ -119,11 +119,19 @@
   .heroImg {
     width: 100%;
     max-width: 90vw;
-    height: 220px; /* <-- reduced from auto to a fixed smaller height */
+    height: 280px; /* <-- reduced from auto to a fixed smaller height */
     object-fit: cover; /* Keeps proportions, crops smartly */
-    margin-bottom: 20px; /* <-- space between image and text */
+    margin-bottom: 25px; /* <-- space between image and text */
   }
-}
+  .title{
+    margin-bottom: 5px; /* reduce gap between heading and paragraph */
+
+  }
+  .description{
+    margin-top: 5px; /* fine-tune spacing below the heading */
+
+  }
+
 
  .container {
     flex-direction: column-reverse;
@@ -134,3 +142,4 @@
   }
 }
 
+}
